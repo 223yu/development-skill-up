@@ -1,0 +1,106 @@
+/* 全体にかかるcss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ////// */
+/* header */
+/* ////// */
+header {
+  width: 100%;
+  background-color: #ec715f;
+}
+.header-container {
+  width: 1024px;
+  height: 70px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+}
+
+.nav-list-item {
+  font-size: 16px;
+  color: #fafafa;
+  margin: 0 30px;
+  list-style: none;
+  line-height: 70px;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 90%;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #fafafa;
+    display: block;
+  }
+
+  #menu-box.open {
+    z-index: 3;
+  }
+
+  #menu-box span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  #menu-box span:first-child {
+    margin-top: 10px;
+  }
+
+  /* navメニュー */
+  nav {
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav.open {
+    right: 0px;
+    background-color: #ec715f;
+  }
+
+  nav.open
+}
+
+/* //// */
+/* main */
+/* //// */
+
+/* ////// */
+/* footer */
+/* ////// */
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+  text-align: center;
+  line-height: 60px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fafafa;
+}
