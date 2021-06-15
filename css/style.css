@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.wrap {
+  overflow: hidden;
+}
+
 .title {
   font-size: 32px;
   color: #000000;
@@ -58,6 +62,11 @@ header {
   line-height: 70px;
 }
 
+.nav-list-item a{
+  text-decoration: none;
+  color: #fafafa;
+}
+
 @media screen and (max-width: 768px) {
   .header-container {
     width: 90%;
@@ -70,10 +79,11 @@ header {
 
   /* ハンバーガーメニュー */
   #menu-box {
+    position: fixed;
     width: 40px;
     height: 40px;
     margin-right: 5%;
-    margin-left: auto;
+    margin-left: 80%;
     margin-top: 5px;
     margin-bottom: 5px;
     border: 1px solid #fafafa;
@@ -99,14 +109,21 @@ header {
   /* navメニュー */
   nav {
     position: fixed;
+    padding-top: 50px;
     right: -100%;
-    width: 100%;
+    width: 30%;
     height: 100%;
+  }
+  
+  .nav-list{
+    display: flex;
+    flex-direction: column;
   }
 
   nav.open {
     right: 0px;
     background-color: #ec715f;
+    opacity: 50%;
   }
 }
 /* //// */
@@ -367,6 +384,11 @@ div[class*="portfolio-imgbox-img"]:nth-child(6) {
     width: 90%;
   }
 
+  .profile-content .text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .profile-title,
   .profile-text {
     text-align: center;
@@ -408,7 +430,6 @@ div[class*="portfolio-imgbox-img"]:nth-child(6) {
 
 .contact-sns {
   display: flex;
-  /* justify-content: center; */
   align-items: flex-start;
   flex-direction: column;
 }
